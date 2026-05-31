@@ -1,0 +1,8 @@
+# OS / editor
+.DS_Store
+._*
+
+# Auto-generated artifacts (added by maintenance sweep)
+__pycache__/
+*.pyc
+*.pyo
