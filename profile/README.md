@@ -1,7 +1,7 @@
 # Spangap - Device Application Framework for ESP32
 
 - Quickly develop firmware that can access the full power of the ESP32, with a built-in slick reactive web interface and/or LCD touch screen.
-- Go cloudless! Build software that runs locally, doing things for which people think you need a cloud service or an Apple/Google-sanctioned mobile app.
+- Go cloudless! Build software that runs on the device or in a browser talking to it. Do things for which you thought you needed a cloud service or to build your own app.
 - Everything everyone needs to build all over again has already been built and is ready to go.
 - Actualy use the RTOS multi-tasking facilities. No more polling or massive loops. Will happily run ten to twenty tasks blocked at 0.0% CPU most of the time, uses the built-in power management so the ESP32 is sleeping half the time.
 - Hierarchical storage object that synchronizes between device (cJSON) and browser (Pinia): type `set net.wifi.enable=1` in the CLI and see the toggle on the LCD and in the web UI move.
@@ -18,7 +18,7 @@
 
 ## Welcome to Spangap
 
-*(Scroll down for 'Getting Started' if you're impatient.)*
+*(Scroll down to 'Getting Started' if you're impatient.)*
 
 It's one of those things that got out of hand. It started with network camera firmware that I wanted to create for the Seeed Studio Sense board. The existing software consisted of very crude proofs of concept that were only that: barely a web interface, slow and incomplete. When I started work I soon ran into some familiar problems I've battled with before when building things for the ESP32.
 
@@ -80,7 +80,9 @@ cd tdeck && \
 spangap monitor /dev/cu.usbmodem1101
 ```
 
-(If that last line doesn't seem to know about spangap, enter `rehash` and try again.) Leave `spangap monitor` running, it will show you the device log output and once we're done will allow you to switch to CLI mode by typing a command.
+(If that last line doesn't seem to know about spangap, enter `rehash` and/or try again from a new terminal window.)
+
+Leave `spangap monitor` running, it will show you the device log output and once we're done will allow you to switch to CLI mode by typing a command.
 
 Now open another terminal window and do:
 
